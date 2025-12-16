@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <!-- Title -->
+    <h1 id="title">Essay Services Survey Form</h1>
+
+    <!-- Description -->
+    <p id="description">
+      Thank you for taking your time to help us improve our academic writing services.
+    </p>
+
+    <!-- Form -->
+    <form id="survey-form">
+
+      <!-- Name -->
+      <label id="name-label" for="name">Name</label><br>
+      <input
+        id="name"
+        type="text"
+        placeholder="Enter your full name"
+        required
+      ><br><br>
+
+      <!-- Email -->
+      <label id="email-label" for="email">Email</label><br>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      ><br><br>
+
+      <!-- Number -->
+      <label id="number-label" for="number">Age</label><br>
+      <input
+        id="number"
+        type="number"
+        placeholder="Enter your age"
+        min="18"
+        max="65"
+      ><br><br>
+      <!-- Dropdown -->
+      <label for="dropdown">Which service do you use most?</label><br>
+      <select id="dropdown">
+        <option value="essays">Essay Writing</option>
+        <option value="research">Research Papers</option>
+        <option value="editing">Editing & Proofreading</option>
+      </select><br><br>
+
+      <!-- Radio Buttons -->
+      <p>How satisfied are you with our services?</p>
+      <label>
+        <input type="radio" name="satisfaction" value="satisfied">
+        Satisfied
+      </label><br>
+      <label>
+        <input type="radio" name="satisfaction" value="neutral">
+        Neutral
+      </label><br>
+      <label>
+        <input type="radio" name="satisfaction" value="unsatisfied">
+        Unsatisfied
+      </label><br><br>
+
+      <!-- Checkboxes -->
+      <p>Which features do you value? (Select all that apply)</p>
+      <label>
+        <input type="checkbox" value="quality">
+        High Quality
+      </label><br>
+      <label>
+        <input type="checkbox" value="delivery">
+        On-Time Delivery
+      </label><br>
+      <label>
+        <input type="checkbox" value="support">
+        24/7 Support
+      </label><br><br>
+      <!-- Textarea -->
+      <label for="comments">Additional Comments</label><br>
+      <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        cols="40"
+        placeholder="Enter any additional comments here..."
+      ></textarea><br><br>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+</html>
