@@ -1,0 +1,12 @@
+body{
+padding-bottom: 50px;
+padding-top: 50px;
+margin: 0 auto;
+width: 90vw;
+min-height: calc(100vh - 100px);
+}
+hr,
+section {
+  width: 80%;        /* percent width relative to parent */
+  margin: 20px auto; /* centers + adds spacing */
+}

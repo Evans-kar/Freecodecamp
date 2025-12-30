@@ -1,0 +1,1 @@
+Today marks the 4th day of being consistent my focus is still on html and css and in today's lab I'm building an event flyer while also testing absolute and relative measurements units in css. 
