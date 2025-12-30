@@ -1,0 +1,1 @@
+In this workshop I will be creating a birthday card while at the same time putting into practice what i have learnt about the pseudo classes and pseudo elements in css. I will also use flex, transform, and transition properties though I will focus on them in a later chapter. 
