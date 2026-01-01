@@ -1,0 +1,26 @@
+body{
+background-color:#f4f4f4;
+}
+.color-box{
+  width:100px;
+  height:100px;
+}
+.color1 {
+  background-color: #ff6b6b; /* hexadecimal */
+}
+
+.color2 {
+  background-color: rgb(54, 162, 235); /* RGB */
+}
+
+.color3 {
+  background-color: coral; /* predefined color word */
+}
+
+.color4 {
+  background-color: hsl(120, 60%, 50%); /* HSL */
+}
+
+.color5 {
+  background-color: #222; /* any background-color is fine */
+}

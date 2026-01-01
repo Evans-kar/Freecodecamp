@@ -1,0 +1,1 @@
+day 6 of being consistent it is the new year and today i did since i didnt want to break the streak i did a light practice lab and it was all about using colors in css. In this project I will use rgb, hsl, and hex colors to test my learning. 
