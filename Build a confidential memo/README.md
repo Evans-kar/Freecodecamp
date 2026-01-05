@@ -1,0 +1,1 @@
+day 10 of 21 today I'm practicing using the transform and box-size properties in css. I have learned of the css box model and most of my lab and workshop will be based on that today. 
