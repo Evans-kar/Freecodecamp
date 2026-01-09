@@ -1,0 +1,103 @@
+<style>
+      :root {
+        /* purple palette */
+        --bg: #0f0a1a;
+        --card: #1b1030;
+        --card2: #241147;
+        --ink: #f3eaff;
+        --muted: #cbb7ff;
+        --border: #6f2da8;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at top, var(--card2), var(--bg));
+        color: var(--ink);
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        padding: 24px;
+      }
+
+      /* User story: main element with ID playing-cards */
+      #playing-cards {
+        display: flex;              /* flexbox */
+        justify-content: center;    /* horizontally center children */
+        flex-wrap: wrap;            /* allow wrapping */
+        gap: 20px;                  /* 20px space between cards */
+        width: min(1000px, 100%);
+      }
+
+      /* User story: each .card uses flexbox and space-between */
+      .card {
+        width: 220px;
+        height: 320px;
+        padding: 14px;
+        border-radius: 18px;
+        background: linear-gradient(135deg, rgba(111, 45, 168, 0.20), rgba(0,0,0,0)),
+                    linear-gradient(180deg, var(--card), #120a22);
+        border: 2px solid rgba(203, 183, 255, 0.25);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card::after {
+        content: "";
+        position: absolute;
+        inset: -40px;
+        background: radial-gradient(circle at 30% 20%, rgba(223, 115, 255, 0.25), transparent 55%);
+        pointer-events: none;
+      }
+
+      /* User stories: .left/.middle/.right exist; use item properties align-self */
+      .left,
+      .middle,
+      .right {
+        z-index: 1;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+      }
+
+      .left {
+        align-self: flex-start; /* start of parent container */
+        text-align: left;
+      }
+
+      .right {
+        align-self: flex-end;   /* end of parent container */
+        text-align: right;
+      }
+
+      .middle {
+        align-self: center;     /* center of parent container */
+        display: flex;          /* use flexbox */
+        flex-direction: column; /* children in a column */
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 44px;
+        color: var(--ink);
+      }
+
+      .corner-rank {
+        font-size: 22px;
+        line-height: 1;
+      }
+
+      .corner-suit {
+        font-size: 20px;
+        color: var(--muted);
+      }
+
+      .pip {
+        filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.25));
+      }
+
+      /* optional: make hearts/diamonds slightly brighter */
+      .warm .pip { color: #ffd1f7; }

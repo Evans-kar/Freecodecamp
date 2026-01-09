@@ -1,0 +1,1 @@
+In this practice my focus is still on css flexbox where Im still practicing flex properties like align-self, justify-content, and flex-wrap. 
